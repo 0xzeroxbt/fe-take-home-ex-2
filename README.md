@@ -16,7 +16,9 @@ You will need to use these given live data to create a graphical representation 
 across time.
 
 It is entirely up to your own imagination for graphical representation the data, there's no hard rules on how
-the data should be display, i.e., type of charts, number of charts, etc.
+the data should be display, i.e., type of charts, number of charts, etc. However, it is important to note that
+you should use a graph that can display the currency data over time, i.e., a line chart, but you're not limited
+to a line chart.
 
 You do not need to make the site responsive, you can assume the resolution for viewing will be in 1920x1080.
 
