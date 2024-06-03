@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"math/rand"
+	"net/http"
 	"strconv"
 	"time"
 
@@ -78,7 +79,12 @@ var currencies = []Currency{
 		IntervalString: 1111,
 	},
 }
-var upgrader = websocket.Upgrader{}
+
+var upgrader = websocket.Upgrader{
+	CheckOrigin: func(_ *http.Request) bool {
+		return true
+	},
+}
 
 func ws(c echo.Context) error {
 	fmt.Println("New socket")
